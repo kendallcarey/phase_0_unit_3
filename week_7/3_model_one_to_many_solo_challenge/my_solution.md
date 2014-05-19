@@ -20,7 +20,7 @@ The relationship between `users` and `tweets` is one to many.
 One user creates a tweet and can create many tweets.
 
 ## Release 3: Schema Design
-![alt tag](https://github.com/kendallcarey/phase_0_unit_3/blob/master/week_7/imgs/Screenshot%202014-05-18%2023.11.14.png)
+![alt tag](https://raw.githubusercontent.com/kendallcarey/phase_0_unit_3/master/week_7/imgs/Screenshot%202014-05-18%2023.11.14.png)
 
 ## Release 4: SQL Statements
 SELECT *140_characters FROM tweet JOIN user WHERE user_id=1
