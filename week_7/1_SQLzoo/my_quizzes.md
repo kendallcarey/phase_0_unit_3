@@ -5,19 +5,7 @@
 
 
 ### My Quiz Results:
-# Having troubles with my git and github again. Promise it will be fixed by tomorrow! But until then:
-
-# Having troubles with my git and github again. Promise it will be fixed by tomorrow! But until then:
-
-https://www.dropbox.com/s/dackwdjg1ygx0kd/Screen%20Shot%202014-05-11%20at%206.51.24%20PM.png
-
-https://www.dropbox.com/s/ub4v5dp2k2q2ck7/Screenshot%202014-05-18%2016.57.19.png
-
-https://www.dropbox.com/s/2mesqrr6zw83z5f/Screenshot%202014-05-18%2017.51.30.png
-
-https://www.dropbox.com/s/62maboow6jedq4s/Screenshot%202014-05-18%2019.40.14.png
-
-https://www.dropbox.com/s/bvxpcct1nw3hcz0/Screenshot%202014-05-18%2020.21.11.png
+<a href="https://github.com/kendallcarey/phase_0_unit_3/blob/master/week_7/imgs/Screen%20Shot%202014-05-11%20at%206.50.22%20PM.png"/>
 
 
 ### Reflection
