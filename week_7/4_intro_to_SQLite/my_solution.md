@@ -37,5 +37,5 @@ sqlite> UPDATE users SET nicknames='Ninja Coder', first_name='Kimmy', updated_at
 
 ## Release 5: Reflect
 
-# This was a good lesson about inserting data and altering tables. It was
-# well done and I learned a lot because of it. YAY!
+This was a good lesson about inserting data and altering tables. It was
+well done and I learned a lot because of it. YAY!
