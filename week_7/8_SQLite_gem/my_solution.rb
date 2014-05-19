@@ -1,6 +1,8 @@
 # U3.W7: BONUS Using the SQLite Gem
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge with:
+# 1) Rj Bernaldo
+# 2) Kendall Carey
 
 require 'sqlite3'
 
@@ -16,11 +18,26 @@ end
 
 def print_longest_serving_reps(minimum_years)  #sorry guys, oracle needs me, i didn't finish this!
   puts "LONGEST SERVING REPRESENTATIVES"
-  puts $db.execute("SELECT name FROM congress_members WHERE years_in_congress > #{minimum_years}")
+  reps = $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years}")
+  reps.each do |name, year|
+      puts "#{name} - #{year}"
+  end
 end
 
-def print_lowest_grade_level_speakers
-  puts "LOWEST GRADE LEVEL SPEAKERS (less than < 8th grade)"
+def print_lowest_grade_level_speakers(grade)
+  puts "LOWEST GRADE LEVEL SPEAKERS (less than grade #{grade})"
+  reps = $db.execute("SELECT name, grade_current FROM congress_members WHERE grade_current < #{grade}")
+  reps.each do |name, grade|
+      puts "#{name} - #{grade}"
+  end
+end
+
+def print_states(state)
+    puts "#{state} Representatives: "
+    reps=$db.execute("SELECT name FROM congress_members WHERE location='#{state}'") 
+    reps.each do |name|
+        puts name
+    end
 end
 
 def print_separator
@@ -39,12 +56,16 @@ print_longest_serving_reps(35)
 # output should look like:  Rep. C. W. Bill Young - 41 years
 
 print_separator
-print_lowest_grade_level_speakers 
+print_lowest_grade_level_speakers(8) 
 # TODO - Need to be able to pass the grade level as an argument, look in schema for "grade_current" column
 
 # TODO - Make a method to print the following states representatives as well:
 # (New Jersey, New York, Maine, Florida, and Alaska)
-
+print_states("NJ")
+print_states("NY")
+print_states("ME")
+print_states("FL")
+print_states("AK")
 
 ##### BONUS #######
 # TODO (bonus) - Stop SQL injection attacks!  Statmaster learned that interpolation of variables in SQL statements leaves some security vulnerabilities.  Use the google to figure out how to protect from this type of attack.

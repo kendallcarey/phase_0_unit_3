@@ -27,3 +27,7 @@ Description of what you're modeling:
 <!-- display your many-to-many image inline here -->
 
 ## Release 5: Reflection
+# I thought this was going to be a lot more difficult than it was
+# It can be a bit tedious though I think what took me the most time was
+# trying to think of another one-to-one schema. Pretty cool. I don't really
+# have much else to say about it.

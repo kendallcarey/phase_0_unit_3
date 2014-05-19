@@ -1,20 +1,34 @@
 # U3.W7: Modeling a Real-World Database (SOLO CHALLENGE)
 
 ## Release 0: Users Fields
-<!-- Identify the fields Twitter collects data for -->
+user ID
+tag ID
+Photo
+header photo
+name
+location
+bio
+facebook account
+
 
 ## Release 1: Tweet Fields
-<!-- Identify the fields Twitter uses to represent/display a tweet. What are you required or allowed to enter? -->
+you can enter up to 140 characters, a photo, tags, location, and time.
 
 ## Release 2: Explain the relationship
-The relationship between `users` and `tweets` is: 
-<!-- because... -->
+The relationship between `users` and `tweets` is one to many.
+
+One user creates a tweet and can create many tweets.
 
 ## Release 3: Schema Design
 <!-- Include your image (inline) of your schema -->
 
 ## Release 4: SQL Statements
-<!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
+SELECT *140_characters FROM tweet JOIN user WHERE user_id=1
+SELECT *140_characters FROM tweet JOIN user WHERE user_id=1 AND time>05/14/14
+SELECT *140_characters FROM tweet JOIN user WHERE tag_id=1
+SELECT tag_id from user JOIN tweet WHERE tweet_id=1234
 
 ## Release 5: Reflection
-<!-- Be sure to add your reflection here!!! -->
+# I feel like this challenge was my aha moment (hoping that my SQL statements 
+# are correct) for SQL. All the challenge really bring everything together. 
+# Very cool.
