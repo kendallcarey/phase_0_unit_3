@@ -7,6 +7,8 @@
 ### My Quiz Results:
 # Having troubles with my git and github again. Promise it will be fixed by tomorrow! But until then:
 
+# Having troubles with my git and github again. Promise it will be fixed by tomorrow! But until then:
+
 https://www.dropbox.com/s/dackwdjg1ygx0kd/Screen%20Shot%202014-05-11%20at%206.51.24%20PM.png
 
 https://www.dropbox.com/s/ub4v5dp2k2q2ck7/Screenshot%202014-05-18%2016.57.19.png
