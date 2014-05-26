@@ -1,1 +1,1 @@
-![alt tag](https://kendallcarey.github.io/artistsalbums.png)
+![alt tag](https://raw.githubusercontent.com/kendallcarey/phase_0_unit_3/master/week_7/imgs/Screenshot%202014-05-25%2023.51.13.png)
