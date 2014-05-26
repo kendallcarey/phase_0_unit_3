@@ -1,4 +1,4 @@
-/*
+  /*
 U3.W8-9: Gradebook from Names and Scores
 
 You will work with the following two variables.  The first, students, holds the names of four students.  
@@ -7,17 +7,20 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge with
+1. Kendall Carey
+2. Ronald Ishak
 
 */
 
-var students = ["Joseph", "Susan", "William", "Elizabeth"]
-
-var scores = [ [80, 70, 70, 100],
-               [85, 80, 90, 90],
-               [75, 70, 80, 75],
-               [100, 90, 95, 85] ]
-
+// 1. Create variable called average which averages out the scores 
+// 2. Create gradebook and assign it a new object 
+// 3. Make each student name in students a property of gradebook and assign each the value of a new object.
+// 4. Give each student property of gradebook its own testScores property
+// 5. Assign it the value of the respective students scores from scores.
+// 6. addScore property to gradebook (assign it the value of a function that accepts name and score arguments)
+// 7. Have it push the score to the value of the testScore property of the gradebook property that matches the value of the name argument.
+// 8. A getAverage property to gradebook and assign it the value of a function
 
 
 
@@ -26,7 +29,36 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+var students = ["Joseph", "Susan", "William", "Elizabeth"]
 
+var scores = [ [80, 70, 70, 100],
+               [85, 80, 90, 90],
+               [75, 70, 80, 75],
+               [100, 90, 95, 85] ]
+               
+var average = function(array) {
+  var sum = 0;
+  var length = array.length;
+  for(var i=0; i< array.length; i++){
+    sum += array[i];
+  }
+  return sum/length;
+}
+
+// var gradebook = {};
+
+var gradebook = {
+  "Joseph": { testScores: scores[0] },
+  "Susan": { testScores: scores[1] },
+  "William": { testScores: scores[2] },
+  "Elizabeth": {testScores: scores[3] },
+  addScore: function(name, score) {
+    this[name].testScores.push(score);
+  },
+  getAverage: function(name) {
+    return average(this[name].testScores);
+  }
+};
 
 
 
@@ -44,13 +76,12 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Reflect
 
-
-
-
-
-
-
-
+// Thank you Scott for being around and helping us whenever we were 
+// confused at Starbucks. After attempting some ruby techniques incorrectly,
+// we finally got into the mindset of javascript again (for the most part). Its
+// funny how we were stuck on the final part of the challenge for like 30 minutes
+// and all we were missing was the part where we return the average to the console.
+// this was a good challenge to get back into javascript.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
