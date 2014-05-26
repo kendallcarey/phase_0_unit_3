@@ -1,0 +1,1 @@
+This quite a bit of time. We got incredibly confused on the foreign key part and I'm still not quite sure if we got that part right. But we had fun and we learned a lot about altering and deleting tables in our quest to get it right. Definitely need more work on this.
