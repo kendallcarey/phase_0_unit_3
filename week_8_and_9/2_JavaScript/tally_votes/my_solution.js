@@ -1,6 +1,8 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge 
+// 1. Kendall Carey
+// 2. Val Mitchell
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -64,10 +66,12 @@ var officers = {
 }
 
 // Pseudocode
-
+// Create a for/in loop that goes through the array and counts the amount
+// of votes for each person.
 
 // __________________________________________
 // Initial Solution
+
 
 
 

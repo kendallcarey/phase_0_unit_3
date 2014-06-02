@@ -1,13 +1,12 @@
 $(document).ready(function(){
  
 //RELEASE 0: 
-  //Link this script and the jQuery library to the jquery_example.html file and analyze what this code does. 
- 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
 $('body').css({'background-color': 'pink'})
  
 //RELEASE 1:
   //Add code here to select elements of the DOM 
- 
+ var bodyElement = $('body')
  
 //RELEASE 2: 
   // Add code here to modify the css and html of DOM elements
